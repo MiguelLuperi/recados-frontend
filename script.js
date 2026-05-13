@@ -1,5 +1,5 @@
 // Configure a URL do seu backend aqui
-const API_URL = "https://seu-backend.onrender.com";
+const API_URL = "https://recados-backend.onrender.com";
 
 async function carregarRecados() {
 
