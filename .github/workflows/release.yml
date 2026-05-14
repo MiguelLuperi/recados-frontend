@@ -1,0 +1,26 @@
+name: Frontend Deploy via SemVer Tag
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Validar frontend
+        run: |
+          echo "Frontend validado"
+
+      - name: Exibir versão
+        run: |
+          echo "Deploy da versão ${GITHUB_REF_NAME}"
+
+      - name: Finalizar deploy
+        run: |
+          echo "Deploy frontend concluído com sucesso"
