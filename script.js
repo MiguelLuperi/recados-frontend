@@ -35,6 +35,7 @@ async function carregarRecados() {
         <div class="recado-meta">
           <span class="autor">${recado.autor}</span>
           <span>📅 ${recado.data}</span>
+          <span>⏰ ${recado.hora}</span>
           <span>🆔 ID: ${recado.id}</span>
         </div>
 
