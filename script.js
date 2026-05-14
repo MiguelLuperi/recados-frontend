@@ -27,6 +27,8 @@ async function carregarRecados() {
       return;
     }
 
+    document.getElementById("contador").innerHTML =
+  `Total de recados: ${dados.total}`;
     container.innerHTML = dados.recados.map(recado => `
       <div class="recado">
 
