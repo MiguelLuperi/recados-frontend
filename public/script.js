@@ -1,6 +1,13 @@
 // Configure a URL do seu backend aqui
 const API_URL = "https://recados-backend.onrender.com";
 
+async function chamarAPI() {
+  const resposta = await fetch(`${API_URL}/v1`);
+  const dados = await resposta.json();
+  document.getElementById("resposta-v1").textContent =
+    `${dados.message} — chamada em ${dados.chamada_em}`;
+}
+
 async function carregarRecados() {
 
   const container = document.getElementById("recados");
