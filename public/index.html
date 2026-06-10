@@ -162,6 +162,28 @@
       margin-bottom: 20px;
       border-left: 4px solid #3c3;
     }
+
+    .api-v1 {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #f0fff0;
+      border-radius: 8px;
+      border-left: 4px solid #3c3;
+    }
+
+    .api-v1 h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .api-v1 button {
+      margin-bottom: 10px;
+    }
+
+    .api-v1 p {
+      color: #666;
+      font-size: 14px;
+    }
   </style>
 </head>
 
@@ -174,6 +196,12 @@
     <p class="version">
       v1.0.0 - CI/CD com Vercel + Render
     </p>
+
+    <div class="api-v1">
+      <h3>🔗 Status da API v1</h3>
+      <button onclick="chamarAPI()">Testar /v1</button>
+      <p id="resposta-v1">Clique no botão para testar.</p>
+    </div>
 
     <div id="mensagem"></div>
 
@@ -206,12 +234,12 @@
     </div>
 
     <h2 style="margin-bottom: 20px; color: #333;">
-  Recados do Sistema:
-</h2>
+      Recados do Sistema:
+    </h2>
 
-<p id="contador" style="margin-bottom:20px; color:#666;">
-  Total de recados: 0
-</p>
+    <p id="contador" style="margin-bottom:20px; color:#666;">
+      Total de recados: 0
+    </p>
 
     <div id="recados" class="recados-container"></div>
 
